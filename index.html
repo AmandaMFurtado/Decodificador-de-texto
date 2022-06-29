@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="logo">
+        <img src="./img/logo.png" alt="Logo Alura ">
+    </header>
+
+    <main class="container">
+        <section class="left">
+            <Label for="texto"><textarea class="textareaTexto" id="texto" cols="50" rows="10"
+                    placeholder="Digite seu texto aqui ..."></textarea></Label>
+            <div class="aviso">
+                <img src="./img/exclamacao.png" alt="Ponto de exclamação">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="button">
+                <button type="submit" onclick="btnEncriptar()" class="criptografar">Criptografar</button>
+                <button type="submit" onclick="btnDesencriptar()" class="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="rigth">
+            <label for="mensagem"><textarea class="textareaMensagem" id="mensagem" cols="30" rows="5">
+                </textarea></label>
+
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Amanda Marques - One Oracle Alura - 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
